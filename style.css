@@ -43,3 +43,24 @@ footer {
 #my_story p {
   text-indent: 1cm;
 }
+
+#project1 {
+  width: 18cm;
+  height: 12cm;
+}
+
+#twitch-logo {
+  width: 40%;
+}
+
+#igdb-logo {
+  height: 20%;
+}
+
+#kaggle-logo {
+  height: 20%;
+}
+
+img {
+  padding: 1%;
+}
