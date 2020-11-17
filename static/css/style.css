@@ -49,18 +49,39 @@ footer {
   height: 12cm;
 }
 
+/* #img-etl {
+  padding-left: 10px;
+} */
+/* #twitch-crop {
+  height: 145px;
+  width: 350px;
+  overflow: cover;
+} */
+
 #twitch-logo {
-  width: 40%;
+  /* height:190px; */
+  width: 350px;
+  padding-bottom: 25px;
 }
 
 #igdb-logo {
-  height: 20%;
+  /* height:145px; */
+  width: 350px;
+  padding-bottom: 25px;
 }
 
 #kaggle-logo {
-  height: 20%;
+  /* height:145px; */
+  width: 350px;
 }
 
-img {
-  padding: 1%;
+#leg-logo {
+  /* height: 460px; */
+  width: 350px;
+  padding-bottom: 25px;
+}
+
+#among-logo {
+  /* height: 460px; */
+  width: 350px;
 }

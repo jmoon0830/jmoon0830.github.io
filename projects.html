@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Justin's Profile</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="static/css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
@@ -47,7 +47,7 @@
     <br>
     <div class="row">
       <div class="col-md-8">
-        <embed id="project1" src="Pandemic Stocks.pdf" type="application/pdf">
+        <embed id="project1" src="static/files/Pandemic_Stocks.pdf" type="application/pdf">
       </div>
       <div class="col-md-4">
         <p>
@@ -88,20 +88,28 @@
           for any person interested in such information and loaded into a SQL databased using Postgres SQL.
         </p>
       </div>
-      <div class="col-md-8">
-        <img id="twitch-logo" src="https://blog.twitch.tv/assets/uploads/01-twitch-logo.jpg" alt="twitch_logo">
-        <img src="https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-144x192.jpg" alt="league_legends">
-        <img src="https://static-cdn.jtvnw.net/ttv-boxart/Among%20Us-144x192.jpg" alt="among_us">
-        <img id="igdb-logo" src="https://pbs.twimg.com/profile_images/1186326995254288385/_LV6aKaA.jpg" alt="igdb_logo">
-        <img id="kaggle-logo" src="https://miro.medium.com/max/1024/1*bQYZ7fp_wcjWFwpBbcRS-Q.png" alt="kaggle_logo">
+      <div class="col-md-4">
+        <div id='img-etl'>
+          <div id="twitch-crop">
+            <img id="twitch-logo" src="static/logos/twitch_logo_crop.jpg" alt="twitch_logo">
+          </div>
+          <img id = "among-logo" src="static/logos/among_us_logo_crop.jpg" alt="among_us">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id='img-etl'>
+          <img id = "leg-logo" src="static/logos/leg_logo_crop.jpg" alt="league_legends">
+          <img id="igdb-logo" src="static/logos/igdb_logo.jpeg" alt="igdb_logo">
+          <img id="kaggle-logo" src="static/logos/kaggle_logo.png" alt="kaggle_logo">
+        </div>
+      </div>
+    </div>
+    <div class ="row">
+      <div class="col-md-12">
+          <h4> Mental Health in the Workplace Analysis </h4>
       </div>
     </div>
   </div>
-    <div class ="row">
-        <div class="col-md-12">
-            <h4> Create Dashboard and Visualizations for Mental Health Data </h4>
-        </div>
-    </div>
   </div>
 
   <footer>
