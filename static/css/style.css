@@ -1,14 +1,27 @@
-section {
-  margin-bottom: 40px;
-}
-
 .jumbotron {
   text-align: center;
+  background-image: url("../images/3b8ad2c7b1be2caf24321c852103598a.jpg");
+  background-size: cover;
+}
+
+section {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-top:30px;
+  padding-bottom: 30px;
+}
+
+.alternate {
+  background-color: rgb(250, 250, 249);
+}
+
+#intro {
+  color: white;
 }
 
 h2 {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 footer {
@@ -31,32 +44,14 @@ footer {
   margin-right: 20%;
 }
 
-#contacts ul {
-  list-style-type:none;
-  padding-left: 0;
-}
-
-#contacts li {
-  margin: 10px;
-}
-
 #my_story p {
   text-indent: 1cm;
 }
 
 #project1 {
-  width: 18cm;
-  height: 12cm;
+  width: 19cm;
+  height: 13cm;
 }
-
-/* #img-etl {
-  padding-left: 10px;
-} */
-/* #twitch-crop {
-  height: 145px;
-  width: 350px;
-  overflow: cover;
-} */
 
 #twitch-logo {
   /* height:190px; */
@@ -84,4 +79,17 @@ footer {
 #among-logo {
   /* height: 460px; */
   width: 350px;
+}
+
+.mental-screenshots {
+  width:49%;
+}
+
+.bigger-contacts {
+  font-size: 20px;
+}
+
+.icons {
+  padding-right: 10px;
+  padding-bottom: 15px;
 }

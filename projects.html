@@ -32,85 +32,121 @@
     </div>
   </nav>
   
-  <div class = "container">
-    <!-- Projects -->
-    <div class ="row">
-        <div class="col-md-12">
-            <h2> Projects </h2>
-        </div>
+  <div class="jumbotron">
+    <div id='intro'>
+      <h1 class="display-4">Projects</h1>
+      <!-- <p class="lead">Find more about my education, work, projects, and qualifications.</p> -->
     </div>
-    <div class ="row">
-        <div class="col-md-12">
-            <h4> Analysis of Stocks During the COVID-19 Pandemic </h4>
-        </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-md-8">
-        <embed id="project1" src="static/files/Pandemic_Stocks.pdf" type="application/pdf">
+  </div>
+
+  <section>
+    <div class = "container">
+      <div class ="row">
+          <div class="col-md-12">
+              <h4> Analysis of Stocks During the COVID-19 Pandemic </h4>
+          </div>
       </div>
-      <div class="col-md-4">
-        <p>
-          My team decided to find out what happened with each sector in the market during the COVID-19
-          pandemic. The data assumes the first 6 months of the year 2020 (Jan 1, 2020 to Jun 30, 2020) to 
-          have been affected by the pandemic. Our assumption was that the tech sector would have seen a 
-          growth during the pandemic whereas sectors that require contact and retail would have declined.
-        </p>
-        <p>
-          After using API calls to retrieve the stock data available at <a href="https://www.alphavantage.co/">Alpha Vantage</a>, 
-          we used Python to clean the data and build data frames. Next, we calculated quarterly percentages from 
-          2015 to 2019 as we began to compare the changes between sectors. We also calculated the average predicted 
-          growth using a linear regression model.
-        </p>
-        <p>
-          The tech sector had grown as expected; however, we were shocked to find that the real estate sector had 
-          equally grown as much.
-        </p>
+      <br>
+      <div class="row">
+        <div class="col-md-8">
+          <embed id="project1" src="static/files/Pandemic_Stocks.pdf" type="application/pdf">
+        </div>
+        <div class="col-md-4">
+          <p>
+            My team decided to find out what happened with each sector in the market during the COVID-19
+            pandemic. The data assumes the first 6 months of the year 2020 (Jan 1, 2020 to Jun 30, 2020) to 
+            have been affected by the pandemic. Our assumption was that the tech sector would have seen a 
+            growth during the pandemic whereas sectors that require contact and retail would have declined.
+          </p>
+          <p>
+            After using API calls to retrieve the stock data available at <a href="https://www.alphavantage.co/">Alpha Vantage</a>, 
+            we used Python to clean the data and build data frames. Next, we calculated quarterly percentages from 
+            2015 to 2019 as we began to compare the changes between sectors. We also calculated the average predicted 
+            growth using a linear regression model.
+          </p>
+          <p>
+            The tech sector had grown as expected; however, we were shocked to find that the real estate sector had 
+            equally grown as much.
+          </p>
+          <p>
+            <a href="https://github.com/jmoon0830/pandemic-stock-analysis">Link to Github Repo</a>
+          </p>
+        </div>
       </div>
-    </div>
-    <div class ="row">
+  </section>
+
+  <section class=alternate>
+    <div class='container'>
+      <div class ="row">
         <div class="col-md-12">
           <h4> Extract Transform Load (ETL) Video Game Data </h4>
         </div>
-    </div>
-    <br>
-    <div class ="row">
-      <div class="col-md-4">
-        <p>
-          The purpose of this project was to showcase our ability to extract, transform, and load data 
-          otherwise known as ETL. We decided to choose the topic of video games and separated our data 
-          into three segments. First, we used the livestreaming website, Twitch, and its developer tool 
-          that allows us to perform API calls to pull in the top live games being played on its 
-          <a href="www.twitch.tv/"> website </a>. Our next data source was from IGDB which is a video 
-          game database that we used to webscrape the top games based on ratings and reviews by critics. 
-          Our last data source was from a public dataset from <a href="www.kaggle.com">Kaggle</a> which 
-          contains videogame sales and playtime information. We cleaned the data so that it could be useable 
-          for any person interested in such information and loaded into a SQL databased using Postgres SQL.
-        </p>
       </div>
-      <div class="col-md-4">
-        <div id='img-etl'>
-          <div id="twitch-crop">
-            <img id="twitch-logo" src="static/logos/twitch_logo_crop.jpg" alt="twitch_logo">
+      <div class ="row">
+        <div class="col-md-4">
+          <p>
+            The purpose of this project was to showcase our ability to extract, transform, and load data 
+            otherwise known as ETL. We decided to choose the topic of video games and separated our data 
+            into three segments. First, we used the livestreaming website, Twitch, and its developer tool 
+            that allows us to perform API calls to pull in the top live games being played on its 
+            <a href="https://www.twitch.tv/"> website </a>. Our next data source was from IGDB which is a video 
+            game database that we used to webscrape the top games based on ratings and reviews by critics. 
+            Our last data source was from a public dataset from <a href="https://www.kaggle.com">Kaggle</a> which 
+            contains videogame sales and playtime information. We cleaned the data so that it could be useable 
+            for any person interested in such information and loaded into a SQL databased using Postgres SQL.
+          </p>
+          <p>
+            <a href="https://github.com/jmoon0830/video-game-etl">Link to Github Repo</a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div id='img-etl'>
+            <div id="twitch-crop">
+              <img id="twitch-logo" src="static/logos/twitch_logo_crop.jpg" alt="twitch_logo">
+            </div>
+            <img id = "among-logo" src="static/logos/among_us_logo_crop.jpg" alt="among_us">
           </div>
-          <img id = "among-logo" src="static/logos/among_us_logo_crop.jpg" alt="among_us">
         </div>
-      </div>
-      <div class="col-md-4">
-        <div id='img-etl'>
-          <img id = "leg-logo" src="static/logos/leg_logo_crop.jpg" alt="league_legends">
-          <img id="igdb-logo" src="static/logos/igdb_logo.jpeg" alt="igdb_logo">
-          <img id="kaggle-logo" src="static/logos/kaggle_logo.png" alt="kaggle_logo">
+        <div class="col-md-4">
+          <div id='img-etl'>
+            <img id = "leg-logo" src="static/logos/leg_logo_crop.jpg" alt="league_legends">
+            <img id="igdb-logo" src="static/logos/igdb_logo.jpeg" alt="igdb_logo">
+            <img id="kaggle-logo" src="static/logos/kaggle_logo.png" alt="kaggle_logo">
+          </div>
         </div>
       </div>
     </div>
-    <div class ="row">
-      <div class="col-md-12">
-          <h4> Mental Health in the Workplace Analysis </h4>
+  </section>
+   
+  <section>
+    <div class='container'>
+      <div class ="row">
+        <div class="col-md-12">
+            <h4> Mental Health in the Workplace Analysis </h4>  
+        </div>
       </div>
+      <br>
+      <div class="row">
+        <div class="col-md-4">
+          <p>
+            This project analyzes <a href="">Kaggle Data</a> containing survey answers on questions surrounding mental health in the workplace. The first section of the app displays the data and can be filtered by state.
+            The second section contains a geojson map that color coordinates based on amount of people surveyed in each state. Dark red signifies larger while gray signifies lesser people. The third 
+            section compares answers surrounding mental health comfortability between 2014 and 2016. The last section compares the gender ratio of males and females who answered "Yes" to 
+            having family history of mental health issues.
+          </p>
+          <p>
+            <a href="https://github.com/jmoon0830/mental-health-project">Link to Github Repo</a>
+          </p>
+        </div>
+        <div class="col-md-8">
+          <img class="mental-screenshots" src="static/images/mental-health-screen/table_screenshot.PNG" alt="">
+          <img class="mental-screenshots" src="static/images/mental-health-screen/map_screenshot.PNG" alt="">
+          <img class="mental-screenshots" src="static/images/mental-health-screen/comfortability_screenshot.PNG" alt="">
+          <img class="mental-screenshots" src="static/images/mental-health-screen/family_history_screenshot.PNG" alt="">
+        </div>
+      </div>  
     </div>
-  </div>
-  </div>
+  </section>
 
   <footer>
     <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

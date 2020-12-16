@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Justin's Profile</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="static/css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
@@ -32,21 +32,46 @@
     </div>
   </nav>
   
+  <div class="jumbotron">
+    <div id='intro'>
+      <h1 class="display-4">Contacts</h1>
+      <!-- <p class="lead">Find more about my education, work, projects, and qualifications.</p> -->
+    </div>
+  </div>
+
   <div class = "container">
     <!-- About Me -->
-    <section id = "contacts">
-      <div class = "row">
-        <div class = "col-md-12">
-          <h2>Contact Me</h2>
-          <ul>
-            <li><img src="icons/telephone.png" alt=""> 678-978-9523 </li>
-            <li><img src="icons/at.png" alt=""> jmoon0830@gmail.com </li>
-            <li><img src="icons/linkedin.png" alt=""> linkedin.com/in/justin-moon </li>
-            <li><img src="icons/github.png" alt=""> github.com/jmoon0830 </li>
-          </ul>
-        </div>
+    <div class = "row">
+      <div class = "col-md-6">
+        <h3>Phone</h3>
+        <img class='icons' src="icons/telephone.png" alt="">
+        <span class='bigger-contacts'>
+          678-978-9523
+        </span>
+        <hr>
+        <h3>Email</h3>
+        <img class='icons' src="icons/at.png" alt="">
+        <span class='bigger-contacts'>
+          jmoon0830@gmail.com
+        </span>
+        <hr>
+        <h3>LinkedIn</h3>
+        <img class='icons' src="icons/linkedin.png" alt="">
+        <span class='bigger-contacts'>
+          linkedin.com/in/justin-moon
+        </span>
+        <hr>
+        <h3>Github</h3>
+        <img class='icons' src="icons/github.png" alt="">
+        <span class='bigger-contacts'>
+          github.com/jmoon0830
+        </span>
+        <hr>
       </div>
-    </section>
+      <div class='col-md-6'>
+        <img src="static/images/contact_pic.jpg" alt="" height = 450px>
+      </div>
+    </div>
   </div>
 
   <footer>
